@@ -1,0 +1,52 @@
+@media only screen and (max-width:900px) {
+    .header__top a span,
+    .header__top span span{
+        display: none;
+    }
+    .toggle-menu{
+        display: block;
+    }
+    .main-nav li{
+        width: 100%;
+    }
+    .main-nav ul{
+        gap: 10px;
+        position: absolute;
+        right: 0;
+        top: 100%;
+        background-color: #1d1c1c;
+        padding: 15px;
+        min-width:140px;
+        display: none;
+    }
+    .main-nav{
+        position: relative;
+    }
+
+    .main-nav ul.expand{
+        display: block;
+        transition: width 2s;
+    }
+
+    /* Footer Responsive css */
+    .footer__main{
+        flex-direction: column;
+    }
+    .footer__col{
+        width: 100%;
+    }
+
+
+    /* Contact form css */
+    .form-box .field-group{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .section-padding{
+        padding: 30px 15px;;
+      }
+}
+
+
+
