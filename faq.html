@@ -5,6 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Static Project</title>
+
+     <!-- jQuery Library (JavaScript Library) -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"
+     integrity="sha512-Pa4Jto+LuCGBHy2/POQEbTh0reuoiEXQWXGn8S7aRlhcwpVkO8+4uoZVSOqUjdCsE+77oygfu2Tl+7qGHGIWsw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="responsive.css" type="text/css">
 </head>
@@ -52,7 +59,7 @@
             -->
         </div>
         <div class="header__main">
-            <a href="index.html" title="Static Project" class="site-logo"><img src="assets/img/logo.png" alt="logo" srcset=""></a>
+            <a href="/" title="Static Project" class="site-logo"><img src="assets/img/logo.png" alt="logo" srcset=""></a>
             <nav class="main-nav">
                 <a href="#" class="toggle-menu"><svg class="icon icon-menu"><use xlink:href="#icon-menu"></use></svg></a>
                 <ul>
@@ -67,24 +74,31 @@
         </div>
     </header>
 
-    <section class="banner clearfix" style="background-image: url(assets/img/banner.jpg);">
-        <div class="banner-info">
-            <h1 class="banner-title">
-                Hi, I'm Himal <strong>Pro Coder</strong>
-            </h1>
-            <div class="text-container">
-                <p>Solo journey, infinite adventure; dance in your own rhythm, a masterpiece of self-discovery. </p>
-            </div>
-            <a href="#" title="Download CV!" class="btn">Download CV!</a>
-        </div>
-        <figure class="banner-photo">
-            <img src="assets/img/crop-doge.png" alt="my image">
-        </figure>
-    </section>
+    <main class="main-container form-box section-padding">
+        <h1 class="page-title">FAQs</h1>
 
-    <main class="main-container">
-        Content Area
+        <!-- 
+            HTML Lists
+            --ordered lists(<ol><ul>)
+            --unordered lists(<ul></ul>)
+                    -both contains list item (<li></li>)
+            --Definition/Description lists (<dl></dl>)
+                -contains
+                    -Description title (<dt></dt>)
+                    - Description detail(<dd></dd>)
+
+
+         -->
+        <dl class="accordion">
+            <dt class="expand">What is E-Commerce Website?</dt>
+            <dd>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi harum, consequatur adipisci ipsum eaque magni id. Saepe quasi velit doloribus?</dd>
+            <dt>How much will cost to develop a site?</dt>
+            <dd>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, fuga.</dd>
+            <dt>How to become Full-stack web-developer?</dt>
+            <dd>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint est nulla labore consequatur debitis culpa? Numquam libero aspernatur commodi voluptatem?</dd>
+        </dl>
     </main>
+
 
     <footer>
         <div class="footer__main">

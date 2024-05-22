@@ -140,8 +140,11 @@ header a:hover{
   font-size: 20px;
 }
 
-#main-container{
+.main-container{
   min-height: 50vh;
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 /* Contact form css */
@@ -320,4 +323,71 @@ textarea{
 .gallery-item a:hover img{
   transform: scale(1.04) rotate(-1deg);
 
+}
+
+
+/* FAQ css added - May 22 - 2024 */
+
+.accordion{
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.accordion dd{
+  display: none;
+  padding: 30px;
+  border: 1px solid #c3c902;
+  margin: 0;
+}
+.accordion dd:first-of-type{
+  display: block;
+}
+
+.accordion dt{
+  position: relative;
+  background-color: aliceblue;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  padding: 4px 10px;
+  cursor: pointer;
+}
+
+.accordion dt:hover,
+.accordion dt.expand{
+  background-color: darkcyan;
+  color: #fff;
+}
+
+.accordion dt::before,
+.accordion dt::after{
+  content: "";
+  width: 16px;
+  height: 3px;
+  background-color: #222;
+
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0,-50%);
+
+  transition: 0.3s;
+}
+
+.accordion dt::after{
+  width: 4px;
+  height: 16px;
+  right: 16px;
+}
+
+
+.accordion dt.expand::after{
+  right:10px;
+  width: 16px;
+  height: 3px;
+}
+
+
+.accordion dt.expand::before,
+.accrodion dt.expand::after{
+  background-color: #fff;
 }
