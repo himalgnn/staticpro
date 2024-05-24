@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Static Project</title>
+
+    <!-- Local file of jQuery -->
+    <script src="assets/jquery.min.js"></script>
     <link rel="stylesheet" href="style.css" type="text/css">
     <link rel="stylesheet" href="responsive.css" type="text/css">
 </head>
@@ -69,21 +72,37 @@
     </header>
 
     <main id="main-container" class="form-box section-padding">
+
+        <!-- Data validation:
+            -client-side validation (Form validation)
+                -HTML5 form validation
+                -Javascript form validation
+            -server side validation (Data validaiton)
+                -Logical and data types and constraints
+
+
+                Note: To apply js validation, ignore HTML5 validation of form
+                        using novalidate attribute
+        -->
         <div class="form-box__info">
             <p>Contact us for more information</p>
         </div>
-        <form action="#" method="post" name="contact_form">
+        <form action="#" method="post" name="contact_form" novalidate>
             <div class="field-group">
                 <label for="fname">Name:</label>
-                <input type="text" id="fname" name="fname" value=""/>
+                <input type="text" id="fname" name="fname" value="" required/>
+                <span></span>
+                <!-- Required: HTML5 validation: Mandatory field -->
             </div>
             <div class="field-group">
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" value=""/>
+                <span></span>
             </div>
             <div class="field-group">
                 <label for="addr">Address:</label>
-                <input type="text" id="addr" name="addr" value=""/>
+                <input type="text" id="addr" name="address" value=""/>
+                <span></span>
             </div>
             <div class="field-group">
                 <label for="phone">Phone:</label>

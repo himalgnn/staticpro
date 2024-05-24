@@ -166,6 +166,9 @@ header a:hover{
   margin-bottom: 10px;
 }
 
+.form-box .field-group:nth-child(2n+1){
+  clear: left; /*Forcefully send to left due to colision issue with form validation*/
+}
 
 input,textarea{
   width: 100%;
@@ -391,3 +394,15 @@ textarea{
 .accrodion dt.expand::after{
   background-color: #fff;
 }
+
+
+/* Form validation CSS */
+
+input + span{
+  display: block;
+  color: red;
+  font-size: 13px;
+  font-style: italic;
+}
+
+
