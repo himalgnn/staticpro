@@ -46,6 +46,12 @@
     .section-padding{
         padding: 30px 15px;;
       }
+
+
+      /* Blog responsive */
+      .gallery-box__item{
+        width: 100%;
+      }
 }
 
 

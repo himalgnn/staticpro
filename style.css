@@ -12,6 +12,12 @@ img{
 
 }
 
+.clearfix::after{
+  content: "";
+  display: block;
+  clear: both;
+}
+
 .header ul{
   padding-left: 0;
   list-style-type: none;
@@ -306,6 +312,7 @@ textarea{
 .gallery-item img{
   display: block;
   max-height: 160px;
+  width: 100%;
   object-fit: cover;
   object-position: top center;
   width: 100%;
@@ -406,3 +413,59 @@ input + span{
 }
 
 
+
+
+/* Blog CSS - my */
+/* .grid-box {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid-box__item{
+  box-sizing: border-box; 
+
+  margin: 0px 10px;
+  width: calc(25% - 20px);
+} */
+
+
+/* Blog css sir */
+
+.grid-box__item{
+  width: calc(33.33% - 22px);
+  float: left;
+  border: 1px solid gray;
+  margin: 10px;
+
+}
+
+
+.grid-box img{
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 100%;
+  margin: 0 auto;
+}
+
+
+.grid-box__content{
+  border-top: 1px solid #ccc;
+  padding: 38px;
+}
+
+.grid-box__title{
+  margin: 0;
+  font-size: 28px;
+}
+
+.meta-box__item{
+  font-weight: 500;
+  font-style: italic;
+  padding-right: 16px;
+}
+
+.pagination{
+  
+}
